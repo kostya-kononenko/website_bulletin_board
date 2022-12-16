@@ -1,0 +1,12 @@
+{% extends 'layout/basic.html' %}
+
+{% load bootstrap4 %}
+
+{% block title %} Видалення оголошення - Профіль користувача {% endblock %}
+{% block content %}
+<h2>Видалення оголошення</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% buttons submit='Видалити' %} {% endbuttons %}
+</form>
+{% endblock %}

@@ -1,0 +1,15 @@
+header h1 {
+    background: url(bg.jpeg) no-repeat left, url(bg.jpeg) no-repeat right;
+}
+
+:root {
+    font-size: medium;
+}
+
+img.main-image {
+    width: 300px;
+}
+
+img.additional-image {
+    width: 300px;
+}

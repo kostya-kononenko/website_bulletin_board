@@ -1,0 +1,14 @@
+{%  extends 'layout/basic.html'%}
+
+{% load bootstrap4 %}
+
+{% block title %} Реєстрація {% endblock %}
+
+{% block content %}
+<h2>Реєстрація нового користувача</h2>
+<form method="post">
+    {% csrf_token %}
+    {% bootstrap_form form layout='horizontal' %}
+    {% buttons submit='Зареєструватись' %} {% endbuttons %}
+</form>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "layout/basic.html" %}
+
+{% block title %} Ошибка при активайції {% endblock %}
+
+{% block content %}
+<h2>Активація</h2>
+<p>Активація не пройшла </p>
+<p><a href="{% url 'main:register' %}">Зарееструватись ще раз</a></p>
+{% endblock %}

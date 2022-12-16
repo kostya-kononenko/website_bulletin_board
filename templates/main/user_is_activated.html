@@ -1,0 +1,9 @@
+{% extends "layout/basic.html" %}
+
+{% block title %} Користувач вже активований {% endblock %}
+
+{% block content %}
+<h2>Активація</h2>
+<p>Користувач з таким ім'ям вже активовано раніше</p>
+<p><a href="{% url 'main:login' %}">Увійти на сайт</a></p>
+{% endblock %}
